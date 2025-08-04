@@ -4,7 +4,24 @@
 //     font-style: normal;
 // }
 @font-face {
-    font-family: "roobert";
-    src: url("../../../public/assets/fonts/");
-    font-weight: 400;
+    font-family: "hankengrotesk-regular";
+    src: url("../../../public/assets/fonts/hankengrotesk-regular.ttf");
+}
+@font-face {
+    font-family: "museosans-bold";
+    src: url("../../../public/assets/fonts/museosans-bold.otf");
+}
+@font-face {
+    font-family: "museoSans-medium";
+    src: url("../../../public/assets/fonts/museoSans-medium.otf");
+}
+
+.hank-normal{
+    font-family: "hankengrotesk-regular";
+}
+.muse-bold {
+    font-family: "museosans-bold";
+}
+.muse-medium{
+    font-family: "museoSans-medium";
 }

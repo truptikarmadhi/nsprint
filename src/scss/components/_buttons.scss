@@ -6,3 +6,13 @@ button,
     -moz-appearance: none !important;
     -webkit-appearance: none !important;
 }
+
+.btnA {
+    &.arrow-btn {
+        &:hover {
+            .btn-arrow {
+                transform: translateX(2px);
+            }
+        }
+    }
+}
