@@ -15,6 +15,10 @@
     font-family: "museoSans-medium";
     src: url("../../../public/assets/fonts/museoSans-medium.otf");
 }
+@font-face {
+    font-family: "test-bold";
+    src: url("../../../public/assets/fonts/test-bold.otf");
+}
 
 .hank-normal{
     font-family: "hankengrotesk-regular";
@@ -24,4 +28,8 @@
 }
 .muse-medium{
     font-family: "museoSans-medium";
+}
+.test-bold{
+    font-family: "test-bold";
+
 }

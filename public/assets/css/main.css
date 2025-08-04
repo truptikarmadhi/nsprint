@@ -14429,6 +14429,10 @@ progress {
   font-family: "museoSans-medium";
   src: url("../../../public/assets/fonts/museoSans-medium.otf");
 }
+@font-face {
+  font-family: "test-bold";
+  src: url("../../../public/assets/fonts/test-bold.otf");
+}
 .hank-normal {
   font-family: "hankengrotesk-regular";
 }
@@ -14439,6 +14443,10 @@ progress {
 
 .muse-medium {
   font-family: "museoSans-medium";
+}
+
+.test-bold {
+  font-family: "test-bold";
 }
 
 /*******************************************************************************
@@ -17790,6 +17798,13 @@ button,
 }
 .card-hover:hover .img {
   transform: scale(1.1);
+}
+
+header {
+  z-index: 999;
+}
+header .contact-img {
+  width: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
