@@ -17469,6 +17469,14 @@ textarea {
   padding-left: 0px;
   padding-right: 0px;
 }
+.row.row4 {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.row.row4 > * {
+  padding-left: 4px;
+  padding-right: 4px;
+}
 .row.row5 {
   margin-left: -5px;
   margin-right: -5px;
@@ -17805,6 +17813,16 @@ header {
 }
 header .contact-img {
   width: 25px;
+}
+
+.two-card-section .card-img {
+  height: 608px;
+}
+
+.left-right-list-section .plus-icon {
+  width: 15px;
+  height: 14px;
+  margin-right: 13px;
 }
 
 /*# sourceMappingURL=main.css.map */
