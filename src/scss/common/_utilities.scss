@@ -1,0 +1,200 @@
+// ----- BG Color -----
+.bg-1F3B26 {
+    background-color: $color-1F3B26;
+}
+.bg-FFFFFF {
+    background-color: $color-FFFFFF;
+}
+.bg-D1FFBA {
+    background-color: $color-D1FFBA;
+}
+.bg-F7F5F7 {
+    background-color: $color-F7F5F7;
+}
+.bg-1C1C1C {
+    background-color: $color-1C1C1C;
+}
+.bg-FFD173 {
+    background-color: $color-FFD173;
+}
+.bg-F5C4FF {
+    background-color: $color-F5C4FF;
+}
+.bg-A3D4FF {
+    background-color: $color-A3D4FF;
+}
+.bg-707070 {
+    background-color: $color-707070;
+}
+
+// ----- Text Color -----
+.text-1F3B26 {
+    color: $color-1F3B26;
+}
+.text-FFFFFF {
+    color: $color-FFFFFF;
+}
+.text-D1FFBA {
+    color: $color-D1FFBA;
+}
+.text-F7F5F7 {
+    color: $color-F7F5F7;
+}
+.text-1C1C1C {
+    color: $color-1C1C1C;
+}
+.text-FFD173 {
+    color: $color-FFD173;
+}
+.text-F5C4FF {
+    color: $color-F5C4FF;
+}
+.text-A3D4FF {
+    color: $color-A3D4FF;
+}
+.text-707070 {
+    color: $color-707070;
+}
+
+// ----- Font Size -----
+.font12 {
+    font-size: $font12;
+}
+.font14 {
+    font-size: $font14;
+}
+.font15 {
+    font-size: $font15;
+}
+.font16 {
+    font-size: $font16;
+}
+.font18 {
+    font-size: $font18;
+}
+.font24 {
+    font-size: $font24;
+}
+.font26 {
+    font-size: $font26;
+}
+.font28 {
+    font-size: $font28;
+}
+.font32 {
+    font-size: $font32;
+}
+.font35 {
+    font-size: $font35;
+}
+.font38 {
+    font-size: $font38;
+}
+.font42 {
+    font-size: $font42;
+}
+
+// ----- Line Height -----
+.leading26 {
+    line-height: $leading26;
+}
+.leading28 {
+    line-height: $leading28;
+}
+.leading32 {
+    line-height: $leading32;
+}
+.leading42 {
+    line-height: $leading42;
+}
+.leading46 {
+    line-height: $leading46;
+}
+.leading49 {
+    line-height: $leading49;
+}
+.leading69 {
+    line-height: $leading69;
+}
+.leading81 {
+    line-height: $leading81;
+}
+
+// ----- Opacity -----
+.opacity23 {
+    opacity: $opacity23;
+}
+.opacity40 {
+    opacity: $opacity40;
+}
+.opacity80 {
+    opacity: $opacity80;
+}
+
+// ----- Responsive -----
+
+@include media-breakpoint-down(lg) {
+    // ----- Font Size -----
+    .res-font12 {
+        font-size: $font12;
+    }
+    .res-font14 {
+        font-size: $font14;
+    }
+    .res-font15 {
+        font-size: $font15;
+    }
+    .res-font16 {
+        font-size: $font16;
+    }
+    .res-font18 {
+        font-size: $font18;
+    }
+    .res-font24 {
+        font-size: $font24;
+    }
+    .res-font26 {
+        font-size: $font26;
+    }
+    .res-font28 {
+        font-size: $font28;
+    }
+    .res-font32 {
+        font-size: $font32;
+    }
+    .res-font35 {
+        font-size: $font35;
+    }
+    .res-font38 {
+        font-size: $font38;
+    }
+    .res-font42 {
+        font-size: $font42;
+    }
+
+    // ----- Line Height -----
+    .res-leading26 {
+        line-height: $leading26;
+    }
+    .res-leading28 {
+        line-height: $leading28;
+    }
+    .res-leading32 {
+        line-height: $leading32;
+    }
+    .res-leading42 {
+        line-height: $leading42;
+    }
+    .res-leading46 {
+        line-height: $leading46;
+    }
+    .res-leading49 {
+        line-height: $leading49;
+    }
+    .res-leading69 {
+        line-height: $leading69;
+    }
+    .res-leading81 {
+        line-height: $leading81;
+    }
+}
