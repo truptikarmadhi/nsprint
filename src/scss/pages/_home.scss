@@ -24,15 +24,3 @@
         width: 80px;
     }
 }
-
-.news-section {
-    .news-card-img {
-        height: 340px;
-    }
-
-    .news-card {
-        &:first-child {
-            height: 525px;
-        }
-    }
-}
