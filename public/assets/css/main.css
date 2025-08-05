@@ -17912,6 +17912,16 @@ button,
   height: 110px;
 }
 
+.product-slider .slick-list {
+  margin-left: -5px;
+  margin-right: -5px;
+  overflow: visible !important;
+}
+.product-slider .slick-list .slick-slide {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 header {
   z-index: 999;
 }
@@ -17970,6 +17980,9 @@ header .contact-img {
 
 .news-section .news-card-img {
   height: 340px;
+}
+.news-section .news-card:first-child {
+  height: 525px;
 }
 
 .two-card-section .card-img {
