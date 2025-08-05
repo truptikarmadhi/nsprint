@@ -10,6 +10,7 @@ import { Parts } from './parts/parts.js'
 import { Truncate } from './parts/truncate.js';
 import { Accordion } from './parts/accordion.js';
 import { Privacy } from './parts/privacy.js';
+import { Filter } from './parts/filter.js';
 
 
 // export for others scripts to use
@@ -43,6 +44,9 @@ $(function () {
   window.accordion.init();
 
   window.privacy = new Privacy();
+  window.privacy.init();
+
+  window.privacy = new Filter();
   window.privacy.init();
 });
 

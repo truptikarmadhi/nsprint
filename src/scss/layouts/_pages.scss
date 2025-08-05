@@ -3,3 +3,13 @@
         height: 18px;
     }
 }
+
+.white-arrow-icon {
+    img {
+        filter: invert(1);
+    }
+}
+
+.border-707070 {
+    border-top: 1px solid rgba($color: $color-707070, $alpha: 0.2);
+}

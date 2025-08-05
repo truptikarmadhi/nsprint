@@ -36,6 +36,15 @@
       padding-right: 5px;
     }
   }
+  &.row6 {
+    margin-left: -6px;
+    margin-right: -6px;
+
+    & > * {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  }
 }
 
 .w-fit {

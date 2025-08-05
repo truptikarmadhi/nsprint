@@ -20433,7 +20433,46 @@ var Plugins = /*#__PURE__*/function () {
   }
   plugins_createClass(Plugins, [{
     key: "init",
-    value: function init() {}
+    value: function init() {
+      this.PagesSliders();
+    }
+  }, {
+    key: "PagesSliders",
+    value: function PagesSliders() {
+      //  ===== product slider =====
+      $(".product-slider").slick({
+        dots: false,
+        infinite: false,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        lazyLoad: "ondemand"
+      });
+
+      //  ===== announcement-slider =====
+      $(".announcement-slider").slick({
+        dots: false,
+        infinite: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        // No delay between transitions
+        speed: 4000,
+        // Smooth speed (in ms)
+        cssEase: "linear",
+        // Linear easing for smooth scroll
+        lazyLoad: "ondemand",
+        centerMode: true,
+        pauseOnHover: false,
+        // Optional (keeps moving even when hovered)
+        variableWidth: true
+      });
+    }
   }]);
   return Plugins;
 }();
@@ -20554,7 +20593,62 @@ var Privacy = /*#__PURE__*/function () {
   }]);
   return Privacy;
 }();
+;// CONCATENATED MODULE: ./src/js/parts/filter.js
+function filter_typeof(obj) { "@babel/helpers - typeof"; return filter_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, filter_typeof(obj); }
+function filter_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function filter_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, filter_toPropertyKey(descriptor.key), descriptor); } }
+function filter_createClass(Constructor, protoProps, staticProps) { if (protoProps) filter_defineProperties(Constructor.prototype, protoProps); if (staticProps) filter_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function filter_toPropertyKey(arg) { var key = filter_toPrimitive(arg, "string"); return filter_typeof(key) === "symbol" ? key : String(key); }
+function filter_toPrimitive(input, hint) { if (filter_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (filter_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Filter = /*#__PURE__*/function () {
+  function Filter() {
+    filter_classCallCheck(this, Filter);
+  }
+  filter_createClass(Filter, [{
+    key: "init",
+    value: function init() {
+      this.ProjectFilter();
+    }
+  }, {
+    key: "ProjectFilter",
+    value: function ProjectFilter() {
+      $(".filter-button").click(function () {
+        var value = $(this).attr("data-filter");
+        if (value == "all") {
+          $(".filter").show("500");
+        } else {
+          $(".filter").not("." + value).hide("1000");
+          $(".filter").filter("." + value).show("1000");
+        }
+      });
+      $(".filter-button").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+
+      //       $(".filter-button").click(function () {
+      //   var value = $(this).attr("data-filter");
+
+      //   if (value == "all") {
+      //     $(".filter").fadeIn(500); // Smooth fade in for all elements
+      //   } else {
+      //     $(".filter")
+      //       .not("." + value)
+      //       .fadeOut(500); // Fade out non-matching elements
+      //     $(".filter")
+      //       .filter("." + value)
+      //       .fadeIn(500); // Fade in matching elements
+      //   }
+      // });
+
+      // $(".filter-button").click(function () {
+      //   $(this).addClass("active").siblings().removeClass("active");
+      // });
+    }
+  }]);
+  return Filter;
+}();
 ;// CONCATENATED MODULE: ./src/js/main.js
+
 
 
 
@@ -20590,6 +20684,8 @@ jquery_default()(function () {
   window.accordion = new Accordion();
   window.accordion.init();
   window.privacy = new Privacy();
+  window.privacy.init();
+  window.privacy = new Filter();
   window.privacy.init();
 });
 
