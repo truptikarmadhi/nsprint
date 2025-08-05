@@ -17942,8 +17942,29 @@ header .contact-img {
   margin-left: 19px;
 }
 
+.tag-content-section {
+  margin-bottom: -350px;
+}
+
 .full-image-section .full-img {
   height: 601px;
+}
+
+.two-card-image-section .two-card-img {
+  height: 439px;
+}
+
+.news-card-section .left-side-img {
+  height: 526px;
+}
+.news-card-section .news-card .news-img {
+  height: 339px;
+}
+.news-card-section .filter-button {
+  cursor: pointer;
+}
+.news-card-section .filter-button.active {
+  opacity: 100% !important;
 }
 
 /*# sourceMappingURL=main.css.map */
