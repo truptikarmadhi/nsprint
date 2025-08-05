@@ -17882,6 +17882,25 @@ header .contact-img {
   width: 25px;
 }
 
+.footer .footer-logo {
+  height: 133px;
+}
+@media (max-width: 991.98px) {
+  .footer .footer-logo {
+    height: 97px;
+  }
+}
+.footer .footer-input input {
+  padding-right: 35px;
+}
+.footer .footer-input input::placeholder {
+  color: rgba(31, 59, 38, 0.4);
+}
+.footer .footer-input .footer-submit {
+  height: 16px;
+  top: 3px;
+}
+
 .social-icons .social-icon {
   height: 18px;
 }
@@ -17910,6 +17929,9 @@ header .contact-img {
 }
 .privacy-section .privacy-right-content .single-content:first-child {
   padding-top: 0px !important;
+}
+.privacy-section .privacy-right-content .single-content:last-child {
+  border-bottom: 0px !important;
 }
 
 /*# sourceMappingURL=main.css.map */
