@@ -33,7 +33,7 @@ export class Plugins {
       lazyLoad: "ondemand",
       centerMode: true,
       pauseOnHover: false, // Optional (keeps moving even when hovered)
-      variableWidth:true
+      variableWidth: true
     });
   }
 }
