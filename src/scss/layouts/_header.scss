@@ -1,7 +1,21 @@
 header{
     z-index: 999;
 
+    .dark-logo{
+        width: 142px;
+    }
+
     .contact-img{
-        width: 25px;
+        height: 25px;
+    }
+
+    &.header-fixed{
+        .header-top{
+            transform: translateY(-45px);
+        }
+        .header-main{
+            background-color: $white;
+            transform: translateY(-44px);
+        }
     }
 }

@@ -13734,8 +13734,15 @@ button,
 
 header {
   z-index: 999; }
+  header .dark-logo {
+    width: 142px; }
   header .contact-img {
-    width: 25px; }
+    height: 25px; }
+  header.header-fixed .header-top {
+    transform: translateY(-45px); }
+  header.header-fixed .header-main {
+    background-color: #fff;
+    transform: translateY(-44px); }
 
 .footer .footer-logo {
   height: 133px; }
