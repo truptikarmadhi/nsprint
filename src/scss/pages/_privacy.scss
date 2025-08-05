@@ -1,0 +1,28 @@
+.privacy-section {
+    .privacy-left-content {
+        .privacy-links {
+            top: 190px;
+
+            li {
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 0px !important;
+                }
+
+                &.active {
+                    a {
+                        color: $color-1F3B26;
+                        opacity: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .privacy-right-content {
+        .single-content {
+            &:first-child {
+                padding-top: 0px !important;
+            }
+        }
+    }
+}

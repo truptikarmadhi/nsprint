@@ -17637,6 +17637,10 @@ textarea {
   font-size: 12px;
 }
 
+.font13 {
+  font-size: 13px;
+}
+
 .font14 {
   font-size: 14px;
 }
@@ -17800,6 +17804,65 @@ button,
   transform: translateX(2px);
 }
 
+.contact-input {
+  height: 60px;
+}
+
+.contact-textarea {
+  height: 140px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.contact-input,
+.contact-textarea {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: #1f3b26;
+}
+
+.contact-checkbox {
+  height: 21px;
+  user-select: none;
+  padding-left: 31px;
+}
+.contact-checkbox input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.contact-checkbox input:checked + .checkmark {
+  background-color: transparent;
+  border-color: #4D4D4D;
+}
+.contact-checkbox input:checked + .checkmark::after {
+  display: block;
+}
+.contact-checkbox .checkmark {
+  transform: translateY(-50%);
+  height: 100%;
+  width: 21px;
+  background-color: transparent;
+  border: 1px solid #4D4D4D;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+.contact-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+  border: solid #1f3b26;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
 .card-hover .img {
   transform: scale(1);
   transition: 0.3s all ease-in-out;
@@ -17808,11 +17871,19 @@ button,
   transform: scale(1.1);
 }
 
+.location-cards .location-img {
+  height: 438px;
+}
+
 header {
   z-index: 999;
 }
 header .contact-img {
   width: 25px;
+}
+
+.social-icons .social-icon {
+  height: 18px;
 }
 
 .two-card-section .card-img {
@@ -17823,6 +17894,22 @@ header .contact-img {
   width: 15px;
   height: 14px;
   margin-right: 13px;
+}
+
+.privacy-section .privacy-left-content .privacy-links {
+  top: 190px;
+}
+@media (max-width: 991.98px) {
+  .privacy-section .privacy-left-content .privacy-links li {
+    margin-bottom: 0px !important;
+  }
+}
+.privacy-section .privacy-left-content .privacy-links li.active a {
+  color: #1f3b26;
+  opacity: 100% !important;
+}
+.privacy-section .privacy-right-content .single-content:first-child {
+  padding-top: 0px !important;
 }
 
 /*# sourceMappingURL=main.css.map */

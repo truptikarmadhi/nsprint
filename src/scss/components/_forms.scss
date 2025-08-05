@@ -1,0 +1,65 @@
+.contact-input {
+    height: 60px;
+}
+
+.contact-textarea {
+    height: 140px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.contact-input,
+.contact-textarea {
+    padding-left: 28px;
+    padding-right: 28px;
+
+    &::placeholder {
+        color: $color-1F3B26;
+    }
+}
+
+.contact-checkbox {
+    height: 21px;
+    user-select: none;
+    padding-left: 31px;
+
+    input {
+        opacity: 0;
+        height: 0;
+        width: 0;
+
+        &:checked {
+            &+.checkmark {
+                background-color: transparent;
+                border-color: $color-4D4D4D;
+
+                &::after {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .checkmark {
+        transform: translateY(-50%);
+        height: 100%;
+        width: 21px;
+        background-color: transparent;
+        border: 1px solid $color-4D4D4D;
+        border-radius: 3px;
+        transition: all 0.2s ease-in-out;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 7px;
+            top: 2px;
+            width: 6px;
+            height: 11px;
+            border: solid $color-1F3B26;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+}
