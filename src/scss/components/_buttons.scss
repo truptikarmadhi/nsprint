@@ -9,8 +9,13 @@ button,
 
 .btnA {
     &.arrow-btn {
+        .btn-arrow {
+            width: 9px;
+        }
+
         &:hover {
             .btn-arrow {
+                width: 9px;
                 transform: translateX(2px);
             }
         }

@@ -10,3 +10,42 @@
         }
     }
 }
+
+.hover-cards {
+    height: 300px;
+
+    .hover-bg {
+        width: 66%;
+        transition: width 0.5s ease-in-out;
+        z-index: 1;
+        padding: 35px;
+
+        .arrow-icon {
+            height: 25px;
+        }
+    }
+
+    .hover-card-text {
+        position: relative;
+        z-index: 2;
+        padding: 2rem;
+    }
+
+    &:hover {
+        .hover-bg {
+            width: 100%;
+        }
+    }
+}
+
+.product-cards {
+    .product-img {
+        height: 435px;
+    }
+}
+
+.offer-cards {
+    .offer-img {
+        height: 110px;
+    }
+}

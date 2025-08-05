@@ -14445,10 +14445,6 @@ progress {
   font-family: "museoSans-medium";
 }
 
-.test-bold {
-  font-family: "test-bold";
-}
-
 /*******************************************************************************
 ******************************* COLOUR VARIABLES *******************************
 *******************************************************************************/
@@ -17796,7 +17792,11 @@ button,
   -webkit-appearance: none !important;
 }
 
+.btnA.arrow-btn .btn-arrow {
+  width: 9px;
+}
 .btnA.arrow-btn:hover .btn-arrow {
+  width: 9px;
   transform: translateX(2px);
 }
 
@@ -17808,11 +17808,70 @@ button,
   transform: scale(1.1);
 }
 
+.hover-cards {
+  height: 300px;
+}
+.hover-cards .hover-bg {
+  width: 66%;
+  transition: width 0.5s ease-in-out;
+  z-index: 1;
+  padding: 35px;
+}
+.hover-cards .hover-bg .arrow-icon {
+  height: 25px;
+}
+.hover-cards .hover-card-text {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+}
+.hover-cards:hover .hover-bg {
+  width: 100%;
+}
+
+.product-cards .product-img {
+  height: 435px;
+}
+
+.offer-cards .offer-img {
+  height: 110px;
+}
+
 header {
   z-index: 999;
 }
 header .contact-img {
   width: 25px;
+}
+
+.border-707070 {
+  border-top: 1px solid rgba(112, 112, 112, 0.2);
+}
+
+.white-arrow-icon img {
+  filter: invert(1);
+}
+
+.tab-section {
+  height: 715px;
+}
+.tab-section .tab-menu .arrow-btn {
+  width: 18px;
+}
+.tab-section .tab-menu .arrow-btn img {
+  filter: invert(1);
+}
+
+.left-right-content-img-section .left-right-content-img {
+  height: 620px;
+}
+
+.offer-section .offer-img {
+  width: 80px;
+}
+
+.news-section .news-card-img {
+  height: 340px;
 }
 
 .two-card-section .card-img {
