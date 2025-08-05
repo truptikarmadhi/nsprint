@@ -55,3 +55,55 @@
         height: 110px;
     }
 }
+
+
+.news-card {
+    .news-card-img {
+        height: 340px;
+    }
+
+    &:first-child {
+        width: 50%;
+        height: 525px;
+
+        a {
+            height: 100% !important;
+            display: block;
+            position: relative;
+
+            .news-card-img {
+                height: 100%;
+                margin-bottom: 0px !important;
+            }
+
+            .news-content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 3;
+                padding: 0px 40px 45px 35px;
+
+                .news-data {
+                    padding-right: 0px !important;
+
+                    .news-tag,
+                    .news-date,
+                    .news-title {
+                        color: $white !important;
+                    }
+
+                    .news-title {
+                        width: 70%;
+                        padding-right: 50px;
+                    }
+
+                    .news-date {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
