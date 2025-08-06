@@ -11,5 +11,15 @@
 }
 
 .border-707070 {
-    border-top: 1px solid rgba($color: $color-707070, $alpha: 0.2);
+    border-color: rgba($color: $color-707070, $alpha: 0.2);
 }
+
+.product-slider-section {
+    .left-right-arrow {
+        width: 9px;
+        height: 9px;
+        margin-left: 13px;
+    }
+}
+
+

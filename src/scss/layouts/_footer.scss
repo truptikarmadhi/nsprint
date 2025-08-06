@@ -1,8 +1,18 @@
+.announcement-slider-section {
+    .announcement-label {
+        .left-right-arrow {
+            width: 25px;
+            height: 25px;
+            margin-left: 19px;
+        }
+    }
+}
+
 .footer {
     .footer-logo {
         height: 133px;
 
-        @include media-breakpoint-down(lg){
+        @include media-breakpoint-down(lg) {
             height: 97px;
         }
     }
