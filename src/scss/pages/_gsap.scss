@@ -1,0 +1,38 @@
+.slider-container {
+    .slider {
+        .slick-list{
+            overflow: visible;
+            .slick-track{
+                display: flex;
+                align-items: center;
+           
+                .slick-slide{
+                    &:nth-child(odd)  {
+                        .slide {
+                            img{
+                                width: 448px;
+                                height: 493px;
+                                @include media-breakpoint-down(lg) {
+                                    width: 200px;
+                                    height: 255px;
+                                }
+                            }
+            
+                        }
+                    }
+                
+                    &:nth-child(even) .slide {
+                        img{
+                            width: 450px;
+                            height: 385px;
+                            @include media-breakpoint-down(lg) {
+                                width: 143px;
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
