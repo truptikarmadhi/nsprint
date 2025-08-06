@@ -52,10 +52,9 @@
 
 .offer-cards {
     .offer-img {
-        height: 110px;
+        height: 80px;
     }
 }
-
 
 .news-card {
     .news-card-img {
@@ -105,5 +104,23 @@
                 }
             }
         }
+    }
+}
+
+.two-card-section {
+    .card-img {
+        height: 608px;
+    }
+}
+
+.two-card-image-section {
+    .two-card-img {
+        height: 439px;
+    }
+}
+
+.full-image-section {
+    .full-img {
+        height: 601px;
     }
 }

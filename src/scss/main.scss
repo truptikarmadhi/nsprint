@@ -45,6 +45,9 @@ $grid-breakpoints: (
 @import "layouts/_pages";
 // pages css
 @import "pages/_home";
-@import "pages/about";
 @import "pages/_privacy";
 @import "pages/_gsap";
+@import "pages/_news";
+// parts css
+@import "parts/_leftright";
+@import "parts/_titlehero";

@@ -10,3 +10,17 @@
         }
     }
 }
+
+.announcement-slider {
+    .slick-list {
+        margin-left: -35px;
+        margin-right: -35px;
+        overflow: visible !important;
+
+        .slick-slide {
+            padding-left: 35px;
+            padding-right: 35px;
+            text-align: end;
+        }
+    }
+}

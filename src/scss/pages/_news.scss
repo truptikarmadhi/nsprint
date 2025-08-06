@@ -1,0 +1,9 @@
+.news-card-section {
+    .filter-button {
+        cursor: pointer;
+
+        &.active {
+            opacity: 100% !important;
+        }
+    }
+}
