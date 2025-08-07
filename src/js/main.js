@@ -12,6 +12,7 @@ import { Accordion } from './parts/accordion.js';
 import { Privacy } from './parts/privacy.js';
 import { Filter } from './parts/filter.js';
 import { Header } from './parts/header.js';
+import { GsapAnimation } from './parts/gsap-animation.js';
 
 
 // export for others scripts to use
@@ -52,6 +53,9 @@ $(function () {
 
   window.header = new Header();
   window.header.init();
+
+  window.gsapanimation = new GsapAnimation();
+  window.gsapanimation.init();
 });
 
 // ===========================================================================
