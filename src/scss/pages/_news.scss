@@ -7,3 +7,33 @@
         }
     }
 }
+
+.news-open-section {
+    .left-content {
+        height: calc(100vh - 400px);
+        top: 200px;
+    }
+
+    .back-btn {
+        .btn-arrow {
+            transform: rotate(-90deg);
+            width: 8px;
+        }
+    }
+
+    .share-btn {
+        width: 11px;
+    }
+
+    .news-open-img {
+        height: 520px;
+    }
+}
+
+.recent-news-section {
+    .recent-card {
+        .news-card-img {
+            height: 340px;
+        }
+    }
+}

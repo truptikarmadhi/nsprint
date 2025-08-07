@@ -10,7 +10,18 @@
         }
     }
 }
+.news-slider{
+    .slick-list {
+        margin-left: -4px;
+        margin-right: -4px;
+    
+        .slick-slide {
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    }
 
+}
 .announcement-slider {
     .slick-list {
         margin-left: -35px;

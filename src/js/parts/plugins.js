@@ -3,6 +3,7 @@ import "slick-carousel";
 export class Plugins {
   init() {
     this.PagesSliders();
+    this.NewsSlider();
   }
 
   PagesSliders() {
@@ -34,6 +35,17 @@ export class Plugins {
       centerMode: true,
       pauseOnHover: false, // Optional (keeps moving even when hovered)
       variableWidth: true
+    });
+  }
+  NewsSlider() {
+    $(".news-slider").slick({
+      dots: false,
+      infinite: false,
+      arrows: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: false,
     });
   }
 }
